@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="Stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <title>Tollerne på Svinesund</title>
+</head>
+<body>
+  <header id="page-header">
+    <img id="header-image" src="svinesund.jpg">
+    <h1 id="title">tollerkvoten</h1>
+  </header>
+  <main>
+    <!-- Ingress -->
+    <article id="ingress">
+      <p>
+        I <a href="https://www.regjeringen.no/no/dokumenter/hurdalsplattformen/id2877252/">Hurdalsplattformen </a>for 2021-2025 står det:
+      </p>
+      <p>
+        <em>Styrkje det strategiske og operative samarbeidet mellom tollvesen, grensemyndigheiter og lokalt politi i grenseområda og styrkje tollvesenets operative bemanning.</em>
+      </p>
+      <p>
+        Skal vi tro medieoppslag om at ansatte i tollvesenet slutter, og det er for få tollere i Norge nå, taler det mot at punktet i Hurdalsplattformen ikke gjennomføres som det blir lovet. Vi har tatt en prat med en som står midt i det, på Norges største grenseovergang. 
+      </p>
+    </article>
+
+    <article class="parallax" id="kineImg">
+      <div class="white-box">
+        <p>
+          Kine Steen, tollinspektør på Svinesund.
+        </p>
+      </div>
+      <div class="white-box">
+        <p>
+          Steen startet som toller på Svinesund i 2010. Hun jobber både ute og inne med varierte arbeidsoppgaver. Inne går det mest i å ta imot og behandle transportdokumenter av varer som skal inn og ut av landet. Ute kontrollerer hun biler og lastebiler, kjører blålys og spaner.
+        </p>
+      </div>
+    </article>
+    <p class="picture-text">Kine Steen. Foto: Tolletaten</p>
+
+    <article>
+      <h3>Ingen begrensninger</h3>
+      <p>
+        Da vi spurte henne om det er et beslag hun husker spesielt godt var hun rask med å fortelle at det var kontroll av en buss. Det var en veldig nervøs person med på bussen. Han hadde lite bagasje og ingen penger. Han skulle til Norge på ferie. 
+      </p>
+      <p class="quote">
+        - Lite troverdig story. 
+      </p>
+      <p class="quoteBy"><i>Kine Steen</i></p>
+      <p>
+        Etter mange timer kontroll, innrømmet han at han hadde svelget. Han hadde nesten en kilo hasj i magen. 
+      </p>
+      <p class="quote">
+        - Det er ingen begrensning på hvor kurererne gjemmer ting. 
+      </p>
+      <p class="quoteBy"><i>Kine Steen</i></p>
+      <p>
+        De kan ha det innvendig og utenpå kroppen, steder i bilen som i tanken eller i skjulte rom, sier Steen.
+      </p>
+    </article>
+
+    <article>
+      <h3>Alt smugles</h3>
+      <p>
+        Det vanligste folk smugler er ifølge Steen tobakk og alkohol. Hun nevner også narkotika i stor grad samt våpen og penger.
+      </p>
+      <button type="button" class="collapsible">Beslaglagte varer 2019/2020 ︾</button>
+      <div class="content">
+        <img id="besImg" src="beslaglagte-varer.png">
+        <figcaption style="margin-left: 9vw;">Tolletatens <a href="https://www.toll.no/no/om-tolletaten/om-oss/statistikk/beslagsstatistikk-2020/">beslagsstatistikk</a> 2020</figcaption>
+      </div>
+
+      <p>
+        Det smugles fra alle land. Steen opplever at det er mye bra beslag fra øst europeiske land. Hun nevner Drawsko Pormoskie i Polen som det har vært smuglet vanvittig mye alkohol fra. Ellers er det også mye hasj fra Nederland. Steen mener samtidig at det ikke er noe fasit om hva slags varer som kommer fra hvilket land.
+      </p>
+    </article>
+
+    <article>
+      <h3>Smugling under koronapandemien</h3>
+      <p>
+        Steen sier at de merket stor forskjell på biltrafikken under koronapandemien. Men selv om bilgrensene var stengt smuglet de bare på en annen måte. Varene skal inn, samme hvordan det gjøres. Når de ikke kunne kjøre det inn på grunn av stengte grenser, fant de andre måter. Steen nevner blant annet fly, båt og drone. De har også stoppet crossere gjennom skogen. 
+      </p>
+      <p class="quote">
+        - Mange varianter og mye kreativt.
+      </p>
+      <p class="quoteBy"><i>Kine Steen</i></p>
+    </article>
+
+    <article class="parallax" id="bilImg">
+      <div class="white-box">
+        <h3>Kreative løsninger</h3>
+        <p>
+          Gjennom 12 år som tollinspektør har Steen kontrollert en hel del biler, som er fylt opp med mye varer som har vært forsøkt skjult. Det er mye biler som er konstruert for at nettopp tollerne ikke skal finne det som er gjemt. Bensin og diesel tanker som ikke nødvendigvis er fylt med drivstoff. Det lages luker og hemmelige rom med koder som åpner disse. 
+        </p>
+      </div>
+      <div class="white-box">
+        <p class="quote">
+          - Ingen vanlige folk hadde sett det hvis de hadde satt seg inn i den bilen, for det er så bra laget. 
+        </p>
+        <p class="quoteBy"><i>Kine Steen</i></p>
+      </div>
+    </article>
+    <p class="picture-text">Bilkontroll. Foto: Tolletaten</p>
+    <article>
+      <p>
+        Steen er bestemt på at det er ingen måte det ikke smugles på. Det som går ann, har de prøvd. Det er heller ingen aldersgruppe. Både unge og pensjonister har blitt tatt.
+      </p>
+    </article>
+
+    <article>
+      <h3>Norges største grenseovergang</h3>
+      <p>
+        Svinesund er Norges største grenseovergang. Det er omfattende geografiske soner med grenseoverganger på E6, riksvei 118, og riksvei 22 som er Berby, Kornsjø og Holtet. Ifølge Steen tar det 40 minutter opp til overgangen ved Kornsjø med bil. Hvis de må kontrollere en bil der oppe, tar det lang tid. Det kan ta flere timer, uten at de nødvendigvis får et beslag. 
+      </p>
+      <div id="map1"></div>
+    </article>
+    <p class="picture-text">Kart over grenseovergangene Svinesund tollsted har ansvar for.</p>
+
+    <article class="flex-article">
+      <div>
+        <h3>For dårlig bemanning</h3>
+        <p> 
+          For dårlig bemanning på tollstasjonene er et nyere problem. Media har i det siste belyst problemet med at det er for dårlig bemanning ved tollstasjonene. <a href="https://www.f-b.no/tollere-rommer-fra-jobben-grensene-er-sa-a-si-apne/s/5-59-2471132">Fredrikstad blad</a> skrev blant annet en artikkel tidligere i år om at grensene så og si er åpne for smugling, fordi det er for lite kapasitet på tollstedene ved landegrensene. 
+        </p>
+        <p>
+          I følge tollvesenets <a href="https://www.toll.no/contentassets/dd39adea80a14840b5f0fd41971656e1/arsrapport_tolletaten_2021.pdf ">årsrapport</a> er det 1537 personer ansatt i tollvesenet per 31.12.21, hvorav kun 905 av disse jobber i grensedivisjonen, altså fysisk på tollstedene langs landegrensene. I 2020 var det 925. Dette viser en solid nedgang på kun ett år, og ifølge artikkelen i Fredrikstad Blad er det forventet mer nedgang de kommende årene. Årsrapporten viser også til at det kun er en stigning med 7 ansatte på et helt år.
+        </p>
+      </div>
+      <div class="tabell-div">
+        <img class="tabell-divisjoner" src="tabell-divisjoner.png" />
+        <figcaption>Antall ansatte per divisjon og staber i tolletaten. Hentet fra tolletatens <a href="https://www.toll.no/contentassets/dd39adea80a14840b5f0fd41971656e1/arsrapport_tolletaten_2021.pdf ">årsrapport.</a></figcaption>
+      </div>
+    </article>
+
+    <article>
+      <h3>Mye støy</h3>
+      <p>
+        Steen kjenner mye på den store omorganiseringen i etaten. Hun mener det er mye støy å være toller for tiden. Hun begrunner dette med lønn, ledelse, turnus og politikk. 
+      </p>
+      <p>
+        Grensedivisjonen er lavt bemannet. Mange har sluttet, og mange har gått av med pensjon. Tollerutdanningen ble bachelor belagt i 2021. Dermed rekker vi ikke å utdanne nye tollere innen mange har sluttet, selv om de er en viktig ressurs for landet vårt. 
+      </p>
+      <p class="quote">
+        - Det er krise, vi er for få. 
+      </p>
+      <p class="quoteBy"><i>Kine Steen</i></p>
+      <p>
+        Svinesund må nå få hjelp fra fengselet. De må hente inn folk og gi dem intensivkurs for å ha nok personer på jobb frem til de nyutdannede er ferdig. 
+      </p>
+      <p class="quote">
+        - Det er bare pinlig, men når ledelsen ikke har forberedt seg på at det er så mange som går av med pensjon, blir det sånn.
+      </p>
+      <p class="quoteBy"><i>Kine Steen</i></p>
+    </article>
+
+    <article>
+      <h3>Stabile år</h3>
+      <p>
+        Tollvesenet har vært stabilt i mange år. Tidligere tjente tollvesenet bedre enn politiet. Ingen sluttet i tollvesenet, fordi det var så gode vilkår. Men på grunn dårlig bemanning, lønnsutvikling som ikke har gått nevneverdig oppover den siste tiden og en dårlig seniorpolitikk, er det mange som har sluttet. Steen nevner også at turnusjobbingen tar knekken på mange. Selv jobber hun hver 3. helg, netter, kvelder og røde dager. Det er svært få dagstillinger å oppdrive. 
+      </p>
+      <p class="quote">
+        - Det blir nok bedre, men det er nok noen år til.
+      </p>
+      <p class="quoteBy"><i>Kine Steen</i></p>
+    </article>
+
+    <article>
+      <h3>Streik er umulig</h3>
+      <p>
+        Det skal veldig mye til for at tollere får lov til å gå ut i streik. Å sette selve kontrollen i streik ville gitt problemer i seg selv, men ekspedisjon som tar inn alle varene og deklarerer dem kan ikke det. Rundt 2000 trailere kjører gjennom Svinesund i døgnet, fulle av varer. Innholdet i trailerne er blant annet mat, blomster og varer til bygningsbransjen. Det bare renner inn, sier Steen. Det er kontinuerlig kø, til og med om natten. Samme trykk, sommer som vinter. Det hadde stoppet opp så fort, at streik er fullstendig krise.  
+      </p>
+      <p class="quote">
+        - Norge hadde gått helt ned hvis vi hadde lukket igjen der.
+      </p>
+      <p class="quoteBy"><i>Kine Steen</i></p>
+    </article>
+
+  </main>
+  <footer>
+      <h4>KILDER:</h4>
+      <p>
+        <a rel="noopener noreferrer" href="#">Kine Steen </a>
+        <br>
+          <a href="https://www.toll.no/contentassets/dd39adea80a14840b5f0fd41971656e1/arsrapport_tolletaten_2021.pdf ">Tollvesenets årsrapport </a>
+        </br> 
+        <br>
+          <a href="https://www.f-b.no/tollere-rommer-fra-jobben-grensene-er-sa-a-si-apne/s/5-59-2471132">Fredrikstad blad</a>
+        </br>
+        <br><a href="<v" >Bilder er lånt med tillatelse fra tolletaten </a></br>
+      </p>
+      <h4>UTVIKLET AV:</h4>
+        <p>Anna Marita Meum, Liv Ingrid Andersen og Yvonne Nielsen</p>
+  </footer>
+
+
+
+  <!-- Javascript -->
+  <script>
+    //Configure map with lat, long and zoom-level
+    var map = L.map("map1").setView([59.030048, 11.428073], 10);
+
+    //Setup map constructor with tiles
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>'
+    }).addTo(map);
+
+    //Set up markers and attach to map
+    //Ny bru
+    var nyBru = L.marker([59.094200, 11.252090]).addTo(map);
+    //Set up tooltip
+    nyBru.bindTooltip("Svinesundsbrua E6");
+
+
+    //Gammel bru
+    var gammelBru = L.marker([59.097735, 11.270615]).addTo(map);
+    gammelBru.bindTooltip("Svinesundbrua 118");
+
+    //Berby
+    var berby = L.marker([58.944389, 11.461592]).addTo(map);
+    berby.bindTooltip("Berby");
+
+    //Holtet
+    var holtet = L.marker([58.878705, 11.534377]).addTo(map);
+    holtet.bindTooltip("Holtet");
+
+    //Kornsjø
+    var kornsjo = L.marker([58.934810, 11.670954]).addTo(map);
+    kornsjo.bindTooltip("Kornsjø");
+
+    var myIcon = L.icon({
+        iconUrl: 'red.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+    var tollsted = L.marker([59.108555, 11.262509], {icon: myIcon}).addTo(map);
+    tollsted.bindTooltip("Svinesund tollsted");
+
+    //Collapsible section
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+  </script>
+</body>
+</html>
